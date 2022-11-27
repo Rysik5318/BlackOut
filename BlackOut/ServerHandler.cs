@@ -20,10 +20,7 @@
         /// <summary>
         /// <inheritdoc cref="Exiled.Events.Handlers.Server.OnRoundStarted"/>
         /// </summary>
-        internal void OnRoundStarted() => Timing.CallDelayed(UnityEngine.Random.Range(
-                _plugin.Config.MinInitialBlackoutDelay > -1.0 ? _plugin.Config.MinInitialBlackoutDelay : _plugin.Config.MinOngoingBlackoutDelay,
-                _plugin.Config.MaxInitialBlackoutDelay > -1.0 ? _plugin.Config.MaxInitialBlackoutDelay : _plugin.Config.MaxOngoingBlackoutDelay),
-                () => _blackoutHandle = Timing.RunCoroutine(DoBlackout()));
+        internal void OnRoundStarted() => _blackoutHandle = Timing.RunCoroutine(DoBlackout());
 
         /// <summary>
         /// <inheritdoc cref="Exiled.Events.Handlers.Server.OnRoundEnded"/>
