@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackOut", "BlackOut.csproj", "{EE2EC73A-B1EE-486B-B8FE-D99AEB0C7228}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackOut", "BlackOut/BlackOut.csproj", "{EE2EC73A-B1EE-486B-B8FE-D99AEB0C7228}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
